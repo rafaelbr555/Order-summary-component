@@ -87,6 +87,7 @@ a:hover{
 }
 .cancel{
     text-decoration: none;
+    font-weight: 700;
 }
 .cancel:hover{
     color:var(--Azul-escuro);
