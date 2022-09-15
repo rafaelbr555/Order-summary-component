@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -13,7 +14,7 @@
     /** Cores Neutras **/
 
     --Azul-muito-claro: hsl(225, 100%, 98%);
-    --Azul-dessaturado: hsl(224, 23%, 55%);
+    --Azul-dessataurado: hsl(224, 23%, 55%);
     --Azul-escuro: hsl(223, 47%, 23%);
 }
 
@@ -22,47 +23,79 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.contenier{
-    width: 410px;
-    height: 635px;
-    border-radius: 10px;
-    background-color: var(--Azul-claro);
+    text-align: center;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
 }
 .imagem{
     width: 100%;
-    height: 200px;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
+}
+.contenier{
+    width: 400px;
+    height: 600px;
+    background-color: var(--Azul-muito-claro);
+    border-radius: 20px;
+    
 }
 .conteudo{
-    text-align: center ;
-    margin: 45px;
-    
+   padding: 45px;
+}
+h1{
+    font-weight: 900;
+}
+strong{
+    color: black;
+    font-weight: 900;
+}
+p{
+    margin: 20px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--Azul-dessataurado);
+}
+a:hover{
+    text-decoration: none;
+    color: var(--Azul-dessataurado);
+
 }
 .musica{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
-    padding: 25px;
+    justify-content: space-evenly;
+    background-color: var(--Azul-claro);
+    border-radius: 15px;
+
+}
+.button{
+    background-color: var(--Azul-brilhante);
+    margin: 20px 0px;
+    padding: 10px 50px;
     border-radius: 10px;
-    background-color: var(--Azul-muito-claro);
+    font-weight: 900;
+}
+.button a{
+    color: aliceblue;
+    text-decoration: none;
+    
+}
+.button:hover{
+    cursor: pointer;
+    background-color: var(--Azul-dessataurado);
+   
+}
+.cancel{
+    text-decoration: none;
+}
+.cancel:hover{
+    color:var(--Azul-escuro);
+}
 
-}
-h1{
-    margin-bottom: 20px;
-}
-p{
-    padding-left: 25px;
-    padding-right: 85px;
+@media screen and (max-width:375px) {
 
+body{
+    background-image: url(images/pattern-background-mobile.svg);
 }
-button{
-   width: 100%;
-   margin-top: 20px;
-   padding: 20px;
-   border-radius: 10px;
-   background-color: var(--Azul-brilhante);
-   color: var(--Azul-muito-claro);
+    
 }
-
